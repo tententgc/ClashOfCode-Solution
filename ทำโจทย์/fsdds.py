@@ -8,7 +8,7 @@ for i in s:
     else:
         v.append(i)
 a = chr(z)
-v.pop(a)
+v.remove(a)
 print("".join(v))
 
 
