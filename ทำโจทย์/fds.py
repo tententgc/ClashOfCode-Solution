@@ -1,10 +1,8 @@
-t = input()
-a=[]
-b=[]
-for i in str(t):
-    if i.islower():
-        if True:a.append(i)
-    if i.isupper():
-        if True:b.append(i)
-print("".join(b))
-print("".join(a))
+n=int(input())
+for i in range(1,100000):
+    s=str(i)+str(n)
+    summ = sum([int(c) for c in s])
+    if (summ==n-i) or (summ==i-n):
+        print(i)
+        break
+    
