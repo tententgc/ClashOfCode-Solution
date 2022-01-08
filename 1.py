@@ -1,15 +1,5 @@
-g=0
-for i in range(int(input())):
-    q = input()
-    z =[0]
-    m=[]
-    for j in q:
+import re
 
-        if z[-1]=="/" and  j == "\\":
-            z.append(j)
-            g+=1
-        else:
-            z.append(j)
-print(g)
-        
-        
+txt  = "The rain in Spain" 
+x = re.sub("\s","9", txt) 
+print(x)
